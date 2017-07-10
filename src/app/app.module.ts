@@ -4,6 +4,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { CustomerComponent } from './customers/customer.component';
+import {CounterInputComponent} from './components/counter-input/counter-input.component'
 
 @NgModule({
   imports: [
@@ -12,7 +13,8 @@ import { CustomerComponent } from './customers/customer.component';
   ],
   declarations: [
     AppComponent,
-    CustomerComponent
+    CustomerComponent,
+    CounterInputComponent
   ],
   bootstrap: [AppComponent]
 })
