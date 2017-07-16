@@ -19,7 +19,8 @@ export class CustomerComponent  implements OnInit {
             lastName : '',
             email : '',
             sendCatalog : true,
-            counter: 10
+            counter: 10,
+            profession: "Astronaut"
         });
     }
 

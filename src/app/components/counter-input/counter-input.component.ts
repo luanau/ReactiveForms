@@ -40,6 +40,8 @@ export class CounterInputComponent implements ControlValueAccessor {
         this.counterValue--;
     }
 
+    // ControlValueAccessor methods 
+    
     writeValue(value: any): void {
         if (value !== undefined) {
             this.counterValue = value;

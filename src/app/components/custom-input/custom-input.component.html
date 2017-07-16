@@ -1,0 +1,21 @@
+<div>
+   <div *ngIf="isReadOnly" class="row">
+      <div class="col-sm-6">
+         <span>{{savedValue}}</span>
+      </div>
+      <div class="col-sm-1">
+         <a href="#" (click)="changeMode()">change</a>
+      </div>
+   </div>
+   <div *ngIf="!isReadOnly" class="row">
+      <div class="col-sm-6">
+         <input [(ngModel)]="value" (blur)="onBlur()"> 
+      </div>
+      <div class="col-sm-1">
+         <a href="#" (click)="save()">save</a>
+      </div>
+      <div class="col-sm-1">
+         <a href="#" (click)="cancel()">cancel</a>
+      </div>
+   </div>
+</div>
